@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Brief ✦ استودیو بریف",
+  "description": "یک پلتفرم تعاملی، ادیتوریال و مینیمال برای جمع‌آوری هوشمند بریف پروژه‌های طراحی، همراه با Visual Brief Builder، فرم انطباقی و لینک اختصاصی اشتراک‌گذاری.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Lovable, high-readability Persian & English Typography */
+    --font-sans: "Kalameh", "IRANSansX", "IRANSans", "Rubik", "Vazirmatn", "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-display: "Lalezar", "Kalameh", "Shekanj", "Outfit", "Bricolage Grotesque", "Rubik", sans-serif;
+    --font-editorial: "Outfit", "Bricolage Grotesque", "Rubik", "Kalameh", sans-serif;
+    --font-mono: "Space Grotesk", monospace, sans-serif;
+
+    /* Cohesive Flat Design & Pop Art Color Palette */
+    --color-pop-paper: #FDFBF7;
+    --color-pop-paper-tint: #F4EFE6;
+    --color-pop-ink: #141416;
+
+    --color-pop-yellow: #FFC72C;     /* Warm Sunshine Pop Yellow */
+    --color-pop-yellow-soft: #FFF2C6;
+    --color-pop-red: #FF4A3D;        /* Silkscreen Coral Vermilion Red */
+    --color-pop-blue: #2563EB;       /* Roy Lichtenstein Cobalt Blue */
+    --color-pop-blue-soft: #DBEAFE;
+    --color-pop-pink: #FF6584;       /* Lovable Bubblegum Pop Pink */
+    --color-pop-pink-soft: #FFE4EA;
+    --color-pop-mint: #10B981;       /* Fresh Flat Mint */
+    --color-pop-purple: #7C3AED;     /* Pop Royal Violet */
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-pop-paper);
+    color: var(--color-pop-ink);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="ltr"] {
+    text-align: left;
+  }
+}
+
+.font-editorial-sans {
+  font-family: var(--font-editorial);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-friendly {
+  font-family: var(--font-sans);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Persian pop-art display headline */
+.font-pop-headline {
+  font-family: "Lalezar", "Kalameh", "Shekanj", "Outfit", sans-serif;
+}
+
+/* Neo-Brutalist & Pop Art Outlines */
+.neo-border {
+  border: 2.5px solid #141416;
+}
+
+.neo-border-3 {
+  border: 3px solid #141416;
+}
+
+.neo-border-white {
+  border: 2.5px solid #FFFFFF;
+}
+
+/* Hard Drop Shadows (Cohesive Pop Art) */
+.neo-shadow {
+  box-shadow: 4px 4px 0px #141416;
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0px #141416;
+}
+
+.neo-shadow-xl {
+  box-shadow: 8px 8px 0px #141416;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px #141416;
+}
+
+.neo-shadow-yellow {
+  box-shadow: 4px 4px 0px #FFC72C;
+}
+
+.neo-shadow-red {
+  box-shadow: 4px 4px 0px #FF4A3D;
+}
+
+.neo-shadow-blue {
+  box-shadow: 4px 4px 0px #2563EB;
+}
+
+.neo-shadow-pink {
+  box-shadow: 4px 4px 0px #FF6584;
+}
+
+.neo-shadow-white {
+  box-shadow: 4px 4px 0px #FFFFFF;
+}
+
+.neo-button-hover {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neo-button-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #141416;
+}
+
+.neo-button-hover:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px #141416;
+}
+
+/* Pop sticker stamp */
+.sticker-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border: 2px solid #141416;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 2.5px 2.5px 0px #141416;
+}
+
+/* ========================================================================= */
+/* HALFTONE SCREEN PRINT TEXTURES (Authentic Pop Art & Ben-Day Dots)        */
+/* ========================================================================= */
+
+/* Fine halftone dot screen (subtle graphic print) */
+.halftone-screen-fine {
+  background-image: radial-gradient(circle, rgba(20, 20, 22, 0.18) 1.25px, transparent 1.25px);
+  background-size: 8px 8px;
+}
+
+/* Medium halftone dot screen */
+.halftone-screen-md {
+  background-image: radial-gradient(circle, rgba(20, 20, 22, 0.22) 1.75px, transparent 1.75px);
+  background-size: 11px 11px;
+}
+
+/* Prominent Pop-Art Ben-Day dots */
+.halftone-screen-pop {
+  background-image: radial-gradient(circle, rgba(20, 20, 22, 0.28) 2.2px, transparent 2.2px);
+  background-size: 13px 13px;
+}
+
+/* Dark mode halftone dots (white on dark ink) */
+.halftone-screen-dark {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.16) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+/* Colorful Halftone Screen Variations */
+.halftone-screen-yellow {
+  background-image: radial-gradient(circle, rgba(255, 199, 44, 0.45) 2px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+.halftone-screen-blue {
+  background-image: radial-gradient(circle, rgba(37, 99, 235, 0.35) 2px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+.halftone-screen-red {
+  background-image: radial-gradient(circle, rgba(255, 74, 61, 0.35) 2px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+/* Halftone gradient fade masks */
+.halftone-mask-fade-right {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.halftone-mask-fade-left {
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.halftone-mask-fade-bottom {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Scrapbook washi tape element */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 90px;
+  height: 22px;
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(2px);
+  border: 1.5px solid #141416;
+  border-left: 2px dashed #141416;
+  border-right: 2px dashed #141416;
+  box-shadow: 2px 2px 0px rgba(20, 20, 22, 0.8);
+  pointer-events: none;
+  z-index: 30;
+}
+
+.washi-tape-pink {
+  background: #FF6584;
+  color: #FFFFFF;
+}
+
+.washi-tape-yellow {
+  background: #FFC72C;
+  color: #141416;
+}
+
+.washi-tape-blue {
+  background: #2563EB;
+  color: #FFFFFF;
+}
+
+.washi-tape-red {
+  background: #FF4A3D;
+  color: #FFFFFF;
+}
+
+/* Sticky note pin effect */
+.paper-pin {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #FF4A3D;
+  border: 2px solid #141416;
+  box-shadow: 2px 2px 0px #141416;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+}
+
+/* Canvas grid pattern */
+.canvas-grid-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, #141416 1px, transparent 1px);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
